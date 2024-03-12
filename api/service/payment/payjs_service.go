@@ -104,7 +104,7 @@ func (js *PayJS) sign(params url.Values) string {
 }
 
 // Check 查询订单支付状态
-// @param tradeNo 支付平台交易 ID
+// tradeNo 支付平台交易 ID
 func (js *PayJS) Check(tradeNo string) error {
 	apiURL := fmt.Sprintf("%s/api/check", js.config.ApiURL)
 	params := url.Values{}
